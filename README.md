@@ -60,4 +60,6 @@ Synthesised dMRI images of the longitudinal phantoms are available for download 
 
 If you use this framework, the provided code and/or the associated software, please cite:
 
-> *Author(s).* Longitudinal quantitative streamline tractography: robust estimation of white matter connectivity differences. *Journal*, Year.
+> Longitudinal quantitative streamline tractography: robust estimation of white matter connectivity differences
+> Philip Pruckner, Remika Mito, David N Vaughan, Kurt G Schilling, Victoria L Morgan, Dario J Englot, Robert E Smith
+> bioRxiv 2026.02.09.704742; doi: https://doi.org/10.64898/2026.02.09.704742
