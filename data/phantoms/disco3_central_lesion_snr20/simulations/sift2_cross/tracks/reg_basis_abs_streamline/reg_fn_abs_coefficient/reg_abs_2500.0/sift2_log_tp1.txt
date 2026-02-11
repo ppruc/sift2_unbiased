@@ -1,0 +1,49 @@
+tcksift2: [WARNING] existing output files will be overwritten
+tcksift2: [INFO] reading config file "/Users/user/.mrtrix.conf"...
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/index.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/index.mif" opened with dimensions 40x40x40x2, voxel spacing 1x1x1x1, datatype UInt32LE
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/directions.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/directions.mif" opened with dimensions 15434x3x1, voxel spacing 1x1x1, datatype Float32LE
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/orig/segmentations/5tt.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/orig/segmentations/5tt.mif" opened with dimensions 40x40x40x5, voxel spacing 1x1x1xnan, datatype Float32LE
+tcksift2: [INFO] 5TT image voxel grid matches fixel dataset; importing directly
+tcksift2: [INFO] User has not provided model weights data, but has provided an ACT 5TT image; appropriate model weights will be derived from the 5TT image
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/fd.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/fd.mif" opened with dimensions 15434x1x1, voxel spacing 1x1x1, datatype Float32LE
+tcksift2: mapping tracks to image... [==================================================]
+tcksift2: [INFO] Proportionality coefficient after streamline mapping is 0.0152284112091102
+tcksift2: [INFO] 1532 fixels have no attributed streamlines; these account for 8.8929555740933992% of the initial cost function
+tcksift2: [INFO] 431 of 108038 fixels were tracked, but have been excluded from optimisation due to inadequate reconstruction; these contribute 3.0768219412961573% of the initial cost function
+tcksift2: [INFO] Constant A scaling regularisation term to match data term is 0.2051449047354236
+tcksift2: [INFO] file "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/sift2_cross/tracks/reg_basis_abs_streamline/reg_fn_abs_coefficient/reg_abs_2500.0//sift2_mu_tp1.txt" already exists - removing
+tcksift2: [INFO] file "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/sift2_cross/tracks/reg_basis_abs_streamline/reg_fn_abs_coefficient/reg_abs_2500.0//algorithm_convergence_tp1.csv" already exists - removing
+tcksift2:          Iteration     CF (data)       CF (reg)    Streamlines
+..
+tcksift2: [.   ]         1        99.949%         0.026%        19999
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+tcksift2: [done]         1        99.949%         0.026%        19999
+tcksift2: [INFO] Entropy decreased from 14.2877 to 14.2877; this is equivalent to 20000 equally-weighted streamlines
+tcksift2: [INFO] Relative entropy (KL divergence):
+tcksift2: [INFO] Forward: -9.9034156955071193
+tcksift2: [INFO] Reverse: 198054.08384918046
+tcksift2: [INFO] file "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/sift2_cross/tracks/reg_basis_abs_streamline/reg_fn_abs_coefficient/reg_abs_2500.0//sift2_weights_tp1.txt" already exists - removing
+tcksift2: [INFO] file "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/sift2_cross/tracks/reg_basis_abs_streamline/reg_fn_abs_coefficient/reg_abs_2500.0//sift2_coeffs_tp1.txt" already exists - removing
+tcksift2: [WARNING] Streamline groups were provided, but no streamline-group-wise regularisation was utilised

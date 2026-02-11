@@ -1,0 +1,50 @@
+tcksift2: [WARNING] existing output files will be overwritten
+tcksift2: [INFO] reading config file "/Users/user/.mrtrix.conf"...
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/index.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/index.mif" opened with dimensions 40x40x40x2, voxel spacing 1x1x1x1, datatype UInt32LE
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/directions.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/directions.mif" opened with dimensions 15434x3x1, voxel spacing 1x1x1, datatype Float32LE
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/orig/segmentations/5tt.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/orig/segmentations/5tt.mif" opened with dimensions 40x40x40x5, voxel spacing 1x1x1xnan, datatype Float32LE
+tcksift2: [INFO] 5TT image voxel grid matches fixel dataset; importing directly
+tcksift2: [INFO] User has not provided model weights data, but has provided an ACT 5TT image; appropriate model weights will be derived from the 5TT image
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/fd.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp1/fd.mif" opened with dimensions 15434x1x1, voxel spacing 1x1x1, datatype Float32LE
+tcksift2: mapping tracks to image... [==================================================]
+tcksift2: [INFO] Proportionality coefficient after streamline mapping is 0.015152492917828924
+tcksift2: [INFO] 1538 fixels have no attributed streamlines; these account for 8.7894902514270346% of the initial cost function
+tcksift2: [INFO] 440 of 108038 fixels were tracked, but have been excluded from optimisation due to inadequate reconstruction; these contribute 3.3194113297538297% of the initial cost function
+tcksift2: [INFO] Constant A scaling regularisation term to match data term is 0.20514490472944699
+tcksift2: [INFO] file "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/sift2_cross/tracks/reg_basis_abs_streamline/reg_fn_abs_factor/reg_abs_50000.0//sift2_mu_tp1.txt" already exists - removing
+tcksift2: [INFO] file "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/sift2_cross/tracks/reg_basis_abs_streamline/reg_fn_abs_factor/reg_abs_50000.0//algorithm_convergence_tp1.csv" already exists - removing
+tcksift2:          Iteration     CF (data)       CF (reg)    Streamlines
+..
+tcksift2: [.   ]         1        99.997%         0.001%        19995
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+tcksift2: [ .  ]        10        99.997%         0.001%        19995
+
+tcksift2: [done]        10        99.997%         0.001%        19995
+tcksift2: [INFO] Entropy decreased from 14.2877 to 14.2877; this is equivalent to 20000 equally-weighted streamlines
+tcksift2: [INFO] Relative entropy (KL divergence):
+tcksift2: [INFO] Forward: -9.9034838490934938
+tcksift2: [INFO] Reverse: 198068.94344897737
+tcksift2: [INFO] file "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/sift2_cross/tracks/reg_basis_abs_streamline/reg_fn_abs_factor/reg_abs_50000.0//sift2_weights_tp1.txt" already exists - removing
+tcksift2: [INFO] file "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/sift2_cross/tracks/reg_basis_abs_streamline/reg_fn_abs_factor/reg_abs_50000.0//sift2_coeffs_tp1.txt" already exists - removing
+tcksift2: [WARNING] Streamline groups were provided, but no streamline-group-wise regularisation was utilised

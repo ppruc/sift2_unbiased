@@ -1,0 +1,46 @@
+tcksift2: [WARNING] existing output files will be overwritten
+tcksift2: [INFO] reading config file "/Users/user/.mrtrix.conf"...
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp2/index.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp2/index.mif" opened with dimensions 40x40x40x2, voxel spacing 1x1x1x1, datatype UInt32LE
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp2/directions.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp2/directions.mif" opened with dimensions 14034x3x1, voxel spacing 1x1x1, datatype Float32LE
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/orig/segmentations/5tt.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/orig/segmentations/5tt.mif" opened with dimensions 40x40x40x5, voxel spacing 1x1x1xnan, datatype Float32LE
+tcksift2: [INFO] 5TT image voxel grid matches fixel dataset; importing directly
+tcksift2: [INFO] User has not provided model weights data, but has provided an ACT 5TT image; appropriate model weights will be derived from the 5TT image
+tcksift2: [INFO] opening image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp2/fd.mif"...
+tcksift2: [INFO] image "/Users/user/Downloads/sift2_unbiased/data/phantoms/disco3_central_lesion_snr20/simulations/fixels/tp2/fd.mif" opened with dimensions 14034x1x1, voxel spacing 1x1x1, datatype Float32LE
+tcksift2: mapping tracks to image... [==================================================]
+tcksift2: [INFO] Proportionality coefficient after streamline mapping is 0.021678071057484181
+tcksift2: [INFO] 1819 fixels have no attributed streamlines; these account for 6.9815732468338281% of the initial cost function
+tcksift2: [INFO] 813 of 98238 fixels were tracked, but have been excluded from optimisation due to inadequate reconstruction; these contribute 7.8050655508218298% of the initial cost function
+tcksift2: [INFO] Constant A scaling regularisation term to match data term is 0.3128961550938022
+tcksift2:          Iteration     CF (data)       CF (reg)    Streamlines
+..
+tcksift2: [.   ]         1        87.566%         6.020%        10605
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+tcksift2: [ .  ]        10        88.010%         5.552%        10605
+
+tcksift2: [done]        10        88.010%         5.552%        10605
+tcksift2: [INFO] Entropy decreased from 13.3725 to 13.3715; this is equivalent to 10598 equally-weighted streamlines
+tcksift2: [INFO] Relative entropy (KL divergence):
+tcksift2: [INFO] Forward: -9.2392850547220622
+tcksift2: [INFO] Reverse: 95182.678300650892
+tcksift2: [WARNING] Streamline groups were provided, but no streamline-group-wise regularisation was utilised

@@ -1,0 +1,75 @@
+tcksift2: [WARNING] existing output files will be overwritten
+tcksift2: mapping tracks to image... [==================================================]
+tcksift2:          Iteration     CF (data)       CF (reg)    Streamlines
+..
+tcksift2: [.   ]         1        52.551%         2.743%        10638
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+tcksift2: [ .  ]         9        39.419%         8.218%        10638
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+tcksift2: [  . ]        17        38.650%         8.818%        10638
+
+..
+
+..
+
+..
+
+..
+
+..
+
+tcksift2: [done]        17        38.650%         8.818%        10638
+tcksift2:          Iteration     CF (data)       CF (reg)    Streamlines
+..
+tcksift2: [.   ]         1        99.998%         0.001%        10638
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+tcksift2: [done]         1        99.998%         0.001%        10638
+tcksift2: [WARNING] Streamline groups were provided, but no streamline-group-wise regularisation was utilised

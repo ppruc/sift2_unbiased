@@ -1,0 +1,111 @@
+# Copycontra (c) 2008-2024 the MRtrix3 contributors.
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+# Covered Software is provided under this License on an "as is"
+# basis, without warranty of any kind, either expressed, implied, or
+# statutory, including, without limitation, warranties that the
+# Covered Software is free of defects, merchantable, fit for a
+# particular purpose or non-infringing.
+# See the Mozilla Public License v. 2.0 for more details.
+#
+# For more details, see http://www.mrtrix.org/.
+
+# Lookup table for extracting the relevant grey matter parcellations from the default FreeSurfer segmentation (desikan_killiany)
+
+0     ???     Unknown                         0   0   0   0
+
+1     I.BSTS  ctx-ipsi-bankssts                 25  100 40  255
+2     I.CACG  ctx-ipsi-caudalanteriorcingulate  125 100 160 255
+3     I.CMFG  ctx-ipsi-caudalmiddlefrontal      100 25  0   255
+4     I.CU    ctx-ipsi-cuneus                   220 20  100 255
+5     I.EC    ctx-ipsi-entorhinal           220 20  10  255
+6     I.FG    ctx-ipsi-fusiform                 180 220 140 255
+7     I.IPG   ctx-ipsi-inferiorparietal         220 60  220 255
+8     I.ITG   ctx-ipsi-inferiortemporal         180 40  120 255
+9     I.ICG   ctx-ipsi-isthmuscingulate         140 20  140 255
+10    I.LOG   ctx-ipsi-lateraloccipital         20  30  140 255
+11    I.LOFG  ctx-ipsi-lateralorbitofrontal     35  75  50  255
+12    I.LG    ctx-ipsi-lingual                  225 140 140 255
+13    I.MOFG  ctx-ipsi-medialorbitofrontal      200 35  75  255
+14    I.MTG   ctx-ipsi-middletemporal           160 100 50  255
+15    I.PHIG  ctx-ipsi-parahippocampal          20  220 60  255
+16    I.PaCG  ctx-ipsi-paracentral              60  220 60  255
+17    I.POP   ctx-ipsi-parsopercularis          220 180 140 255
+18    I.POR   ctx-ipsi-parsorbitalis            20  100 50  255
+19    I.PTR   ctx-ipsi-parstriangularis         220 60  20  255
+20    I.PCAL  ctx-ipsi-pericalcarine            120 100 60  255
+21    I.PoCG  ctx-ipsi-postcentral              220 20  20  255
+22    I.PCG   ctx-ipsi-posteriorcingulate       220 180 220 255
+23    I.PrCG  ctx-ipsi-precentral               60  20  220 255
+24    I.PCU   ctx-ipsi-precuneus                160 140 180 255
+25    I.RACG  ctx-ipsi-rostralanteriorcingulate 80  20  140 255
+26    I.RMFG  ctx-ipsi-rostralmiddlefrontal     75  50  125 255
+27    I.SFG   ctx-ipsi-superiorfrontal          20  220 160 255
+28    I.SPG   ctx-ipsi-superiorparietal         20  180 140 255
+29    I.STG   ctx-ipsi-superiortemporal         140 220 220 255
+30    I.SMG   ctx-ipsi-supramarginal            80  160 20  255
+31    I.FP    ctx-ipsi-frontalpole              100 0   100 255
+32    I.TP    ctx-ipsi-temporalpole             70  70  70  255
+33    I.TTG   ctx-ipsi-transversetemporal       150 150 200 255
+34    I.IN    ctx-ipsi-insula                   255 192 32  255
+
+35    I.CER   Ipsi-Cerebellum-Cortex          230 148 34  255
+
+36    I.TH    Ipsi-Thalamus                   0   118 14  255
+37    I.CA    Ipsi-Caudate                    122 186 220 255
+38    I.PU    Ipsi-Putamen                    236 13  176 255
+39    I.PA    Ipsi-Pallidum                   12  48  255 255
+40    I.HI    Ipsi-Hippocampus                220 216 20  255
+41    I.AM    Ipsi-Amygdala                   103 255 255 255
+42    I.AC    Ipsi-Accumbens-area             255 165 0   255
+
+43    C.TH    Contra-Thalamus                  0   118 14  255
+44    C.CA    Contra-Caudate                   122 186 220 255
+45    C.PU    Contra-Putamen                   236 13  176 255
+46    C.PA    Contra-Pallidum                  13  48  255 255
+47    C.HI    Contra-Hippocampus               220 216 20  255
+48    C.AM    Contra-Amygdala                  103 255 255 255
+49    C.AC    Contra-Accumbens-area            255 165 0   255
+
+50    C.BSTS  ctx-contra-bankssts                 25  100 40  255
+51    C.CACG  ctx-contra-caudalanteriorcingulate  125 100 160 255
+52    C.CMFG  ctx-contra-caudalmiddlefrontal      100 25  0   255
+53    C.CU    ctx-contra-cuneus                   220 20  100 255
+54    C.EC    ctx-contra-entorhinal           220 20  10  255
+55    C.FG    ctx-contra-fusiform                 180 220 140 255
+56    C.IPG   ctx-contra-inferiorparietal         220 60  220 255
+57    C.ITG   ctx-contra-inferiortemporal         180 40  120 255
+58    C.ICG   ctx-contra-isthmuscingulate         140 20  140 255
+59    C.LOG   ctx-contra-lateraloccipital         20  30  140 255
+60    C.LOFG  ctx-contra-lateralorbitofrontal     35  75  50  255
+61    C.LG    ctx-contra-lingual                  225 140 140 255
+62    C.MOFG  ctx-contra-medialorbitofrontal      200 35  75  255
+63    C.MTG   ctx-contra-middletemporal           160 100 50  255
+64    C.PHIG  ctx-contra-parahippocampal          20  220 60  255
+65    C.PaCG  ctx-contra-paracentral              60  220 60  255
+66    C.POP   ctx-contra-parsopercularis          220 180 140 255
+67    C.POR   ctx-contra-parsorbitalis            20  100 50  255
+68    C.PTR   ctx-contra-parstriangularis         220 60  20  255
+69    C.PCAL  ctx-contra-pericalcarine            120 100 60  255
+70    C.PoCG  ctx-contra-postcentral              220 20  20  255
+71    C.PCG   ctx-contra-posteriorcingulate       220 180 220 255
+72    C.PrCG  ctx-contra-precentral               60  20  220 255
+73    C.PCU   ctx-contra-precuneus                160 140 180 255
+74    C.RACG  ctx-contra-rostralanteriorcingulate 80  20  140 255
+75    C.RMFG  ctx-contra-rostralmiddlefrontal     75  50  125 255
+76    C.SFG   ctx-contra-superiorfrontal          20  220 160 255
+77    C.SPG   ctx-contra-superiorparietal         20  180 140 255
+78    C.STG   ctx-contra-superiortemporal         140 220 220 255
+79    C.SMG   ctx-contra-supramarginal            80  160 20  255
+80    C.FP    ctx-contra-frontalpole              100 0   100 255
+81    C.TP    ctx-contra-temporalpole             70  70  70  255
+82    C.TTG   ctx-contra-transversetemporal       150 150 200 255
+83    C.IN    ctx-contra-insula                   255 192 32  255
+
+84    C.CER   Contra-Cerebellum-Cortex         230 148 34  255
+
+85    IC.BS   Brain-Stem                       119 159 176 0
+

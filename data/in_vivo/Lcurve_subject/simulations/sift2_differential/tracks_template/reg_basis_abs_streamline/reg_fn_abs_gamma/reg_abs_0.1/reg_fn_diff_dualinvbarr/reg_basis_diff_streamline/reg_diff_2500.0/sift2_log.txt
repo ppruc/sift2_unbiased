@@ -1,0 +1,89 @@
+tcksift2: [WARNING] existing output files will be overwritten
+tcksift2: mapping tracks to image... [==================================================]
+tcksift2:          Iteration     CF (data)       CF (reg)    Streamlines
+..
+tcksift2: [ .  ]         1        71.377%         1.678%        99478
+
+..
+tcksift2: [  . ]         2        65.082%         3.040%        99478
+
+..
+tcksift2: [  . ]         3        62.097%         3.969%        99478
+
+..
+
+..
+tcksift2: [ .  ]         5        59.253%         5.137%        99478
+
+..
+
+..
+
+..
+
+..
+tcksift2: [ .  ]         9        57.232%         6.214%        99478
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+tcksift2: [ .  ]        17        56.199%         6.907%        99478
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+tcksift2: [done]        26        55.925%         7.127%        99478
+tcksift2: Generating streamline coefficient statistic images... [==================================================]
+tcksift2: Generating delta coefficient statistic images... [==================================================]
+tcksift2:          Iteration     CF (data)       CF (reg)    Streamlines
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+
+..
+tcksift2: [  . ]         7        99.993%         0.004%        99478
+
+..
+
+..
+
+..
+
+tcksift2: [done]        10        99.993%         0.004%        99478
+tcksift2: Generating delta coefficient statistic images... [==================================================]
+tcksift2: [WARNING] Streamline groups were provided, but no streamline-group-wise regularisation was utilised

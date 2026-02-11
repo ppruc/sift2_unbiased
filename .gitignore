@@ -1,0 +1,22 @@
+# Ignore phantom data
+phantoms_raw/
+
+# Exclude large phantom datasets
+data/phantoms/disco3_single_bundle/
+data/phantoms/disco3_crossing_bundles/
+data/phantoms/disco3_central_lesion/
+
+data/phantoms/disco3_single_bundle_snr20/orig/
+data/phantoms/disco3_crossing_bundles_snr20/orig/
+data/phantoms/disco3_central_lesion_snr20/orig/
+
+
+# OS junk
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
