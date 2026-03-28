@@ -14,7 +14,7 @@ timepoint, the presented framework derives a single, subject-specific
 for subsequent **"symmetric"** or **"differential"** SIFT2 optimisation,
 thereby enabling robust estimation of changes in FBC.  
 
-We here refer to a tractogram as *quantitative* if it has been (SIFT2)
+We here refer to a tractogram as *quantitative* if it has been SIFT2
 density-optimised, and as *unbiased* if it has been constructed within an
 unbiased session-average template, such that it is equally representative
 of all timepoints.

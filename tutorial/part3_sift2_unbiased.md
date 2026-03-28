@@ -84,7 +84,7 @@ density signal along its length.
 
 > [!NOTE]
 > The proportionality coefficient μ acts as a global scaling factor between
-> the density of the reconstructed tractogram to the total fibre density across all fixels.
+> the density of the reconstructed tractogram and the total fibre density across all fixels.
 > Here, μ is estimated from the within-subject template and then held constant across timepoints, 
 > ensuring that streamline weights remain directly comparable. 
 
