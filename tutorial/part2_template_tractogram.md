@@ -602,7 +602,10 @@ tckgen \
   -select 10000000 \
   template/fod_template.mif \
   template/tracks_10M.tck \
-  -cutoff 0.06
+  -cutoff 0.06 \
+  -backtrack \
+  -maxlen 250 \
+  -power 0.33
 ```
 
 > [!WARNING]
