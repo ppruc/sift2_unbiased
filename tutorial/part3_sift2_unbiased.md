@@ -53,7 +53,8 @@ ${tcksift2_unbiased} \
   -act template/5tt.mif \
   template/tracks_10M.tck \
   template/fixels/metrics/${metric}_mean.mif \
-  template/weights/tracks_10M_mean.txt
+  template/weights/tracks_10M_mean.txt \
+  -out_mu template/weights/sift2_mu.txt
 ```
 
 ### 3.1.2 Symmetrically optimise the unbiased quantitative tractogram 
@@ -66,18 +67,26 @@ to initialise additional SIFT2<sub>symmetric</sub> runs, further optimising
 the densities so that they match session-specific data.
 
 ```bash
+mu=$(cat template/weights/sift2_mu.txt)
+
 for_each tp* : ${tcksift2_unbiased} \
   -act template/5tt.mif \
   template/tracks_10M.tck \
   template/fixels/metrics/${metric}_IN.mif \
   template/weights/tracks_10M_IN.txt \
   -init_factors template/weights/tracks_10M_mean.txt \
-  -out_mu template/weights/sift2_mu_IN.txt
+  -in_mu ${mu}
 ```
 
 The output is a set of streamline weights for each session, where each
 weight encodes the density contribution of the streamline to the fibre
 density signal along its length.
+
+> [!NOTE]
+> The proportionality coefficient μ acts as a global scaling factor between
+> the density of the reconstructed tractogram to the total fibre density across all fixels.
+> Here, μ is estimated from the within-subject template and then held constant across timepoints, 
+> ensuring that streamline weights remain directly comparable. 
 
 ### 3.1.3 Reconstruction of session-wise structural connectomes 
 
@@ -125,9 +134,10 @@ import numpy as np
 import pandas as pd
 from glob import glob
 
+sift2_mu = np.loadtxt(f"template/weights/sift2_mu.txt")
+
 for tp in glob("tp*"):
     connectome = pd.read_csv(f"connectomes/{tp}.csv", header=None)
-    sift2_mu = np.loadtxt(f"template/weights/sift2_mu_{tp}.txt")
     connectome_fbc = connectome * sift2_mu
     connectome_fbc.to_csv(
         f"connectomes/{tp}_fbc.csv",
