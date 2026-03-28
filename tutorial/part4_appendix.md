@@ -22,7 +22,7 @@ The provided commands are written to **replace steps 2.1 and 2.2.1**
 T1-weighted template) within the main tutorial.
 
 > [!NOTE]
-> The here described integrated workflow was first introduced in a separate article [[Pruckner2025](https://academic.oup.com/brain/advance-article/doi/10.1093/brain/awaf344/8256350?login=false)].
+> The here described integrated workflow was introduced in a separate article [[Pruckner2025](https://academic.oup.com/brain/advance-article/doi/10.1093/brain/awaf344/8256350?login=false)].
 > If you follow the processing steps outlined below, please also cite this work accordingly.
 >
 > Also note that the upcoming code sections make extensive use of algorithms from software packages other than MRtrix3.
