@@ -81,6 +81,25 @@ invoking the command with the ```-help``` option.
 - python3 installation, including pandas and numpy
 - Recommended: [ACPC Detect](https://www.nitrc.org/projects/art/) installation
 
+# Installation Guide
+Separate builds of MRtrix3 branches are required for this pipeline, as the modified commands are not yet part of the main MRtrix3 release. Below is an example for compiling the [updated version of the tcksift2 command](https://github.com/MRtrix3/mrtrix3/tree/sift2diff).
+
+```bash
+git clone https://github.com/MRtrix3/mrtrix3.git mrtrix3_sift2diff
+cd mrtrix3_sift2diff
+git checkout sift2diff
+./configure -nogui
+./build bin/tcksift2
+```
+
+This will build only the relevant command without GUI. After compilation, the command can be called by explicitly providing the full path, e.g.:
+
+```bash
+path/to/mrtrix3_sift2diff/bin/tcksift2
+```
+
+Repeat the same process for any other required branches (e.g. `fixelcorrespondence`).
+
 # Table of Contents
 
 [**PART 1: Pre-processing and Constrained Spherical Deconvolution**](part1_preprocessing_csd.md)

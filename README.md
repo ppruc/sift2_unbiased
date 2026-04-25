@@ -56,6 +56,25 @@ Synthesised dMRI images of the longitudinal phantoms are available for download 
 
 ---
 
+# Installation Guide
+To run symmetric and differential optimisation an [updated version of the tcksift2 command](https://github.com/MRtrix3/mrtrix3/tree/sift2diff) needs to be compiled. 
+
+```bash
+git clone https://github.com/MRtrix3/mrtrix3.git mrtrix3_sift2diff
+cd mrtrix3_sift2diff
+git checkout sift2diff
+./configure -nogui
+./build bin/tcksift2
+```
+
+This will build only the relevant command without GUI. After compilation, the command can be called by explicitly providing the full path, e.g.:
+
+```bash
+path/to/mrtrix3_sift2diff/bin/tcksift2
+```
+
+---
+
 ## Citation
 
 If you use this framework, the provided code and/or the associated software, please cite:
