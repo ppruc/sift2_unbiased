@@ -386,25 +386,24 @@ for_each tp* : N4BiasFieldCorrection \
 To derive a pseudo T1-weighted image from ODF data run:
 
 ```bash
-for_each tp* : sh -c '
-  mrconvert IN/wmfod_norm.mif IN/tmp_wm.mif -coord 3 0
-  mrcalc IN/tmp_wm.mif 120 -mult IN/tmp_wm_scaled.mif
-  mrcalc IN/gm_norm.mif 60 -mult IN/tmp_gm_scaled.mif
-  mrcalc IN/csf_norm.mif 30 -mult IN/tmp_csf_scaled.mif
+for_each tp* : mrsynthstrip \
+  -i IN/T1w_norm.nii.gz \
+  -o IN/tmp_T1w_norm_brain.nii.gz \
+  -m IN/T1w_norm_mask.nii.gz
 
-  mrcalc IN/tmp_wm_scaled.mif IN/tmp_gm_scaled.mif -add \
-    IN/tmp_wm_gm_scaled.mif
-
-  mrcalc IN/tmp_wm_gm_scaled.mif IN/tmp_csf_scaled.mif -add \
-    IN/tmp_wm_gm_csf_scaled.mif
-
-  mrhistmatch linear \
-    IN/tmp_wm_gm_csf_scaled.mif \
+for_each tp* : \
+  mrconvert IN/wmfod_norm.mif - -coord 3 0 \
+  "|" mrcalc - 120 -mult - \
+  "|" mrcalc - IN/gm_norm.mif 60 -mult -add - \
+  "|" mrcalc - IN/csf_norm.mif 30 -mult -add - \
+  "|" mrhistmatch linear \
+    - \
     IN/T1w_norm.nii.gz \
-    IN/T1w_pseudo.nii.gz
+    IN/T1w_pseudo.nii.gz \
+    -mask_input IN/dwi_mask_upsampled.mif \
+    -mask_target IN/T1w_norm_mask.nii.gz
 
-  rm IN/tmp_*.mif
-'
+for_each tp* : rm IN/tmp*
 ```
 
 To rigidly register T1-weighted data to the pseudeo T1-weighted image run:
@@ -418,15 +417,26 @@ for_each tp* : antsRegistrationSyNQuick.sh \
   -t r
 ```
 
+To apply the transform to the full-resolution T1-weighted image and mask run:
 
-> [!NOTE]
-> While MRtrix3 supports the use of
-> [unix pipes](https://mrtrix.readthedocs.io/en/latest/getting_started/command_line.html#unix-pipelines)
-> for multi-step operations to avoid writing unneeded intermediate
-> outputs, these pipes are not supported for batch processing within
-> ```for_each```. Hence, multi-step operations are here executed within a
-> subshell using temporary intermediate files, which are removed upon
-> completion of each job.
+```bash
+for_each tp* : antsApplyTransforms \
+  -d 3 \
+  -i IN/T1w_norm.nii.gz \
+  -r IN/T1w_norm.nii.gz \
+  -o IN/T1w_norm_Warped_full_resolution.nii.gz \
+  -t IN/T1w_norm_0GenericAffine.mat \
+  -n Linear
+
+for_each tp* : antsApplyTransforms \
+  -d 3 \
+  -i IN/T1w_norm_mask.nii.gz \
+  -r IN/T1w_norm_mask.nii.gz \
+  -o IN/T1w_norm_Warped_full_resolution_mask.nii.gz \
+  -t IN/T1w_norm_0GenericAffine.mat \
+  -n NearestNeighbor
+
+```
 
 > [!WARNING]
 > Accurate alignment between the registered DWI and T1-weighted images is

@@ -11,6 +11,13 @@ depending on if rigid or non-linear registration was used.
 > needs to be compiled, which is [available through the MRtrix3 GitHub repository](https://github.com/MRtrix3/mrtrix3/tree/sift2diff).
 > After sucessful compilation of the command, replace ```path/to/installation/...``` in the upcoming variable defintion with the relevant path on your system.
 
+> [!NOTE]
+> Symmetric and differential optimisation are two *alternative* strategies to improve the 
+> robustness of longitudinal structural connectivity analysis. Users must therefore choose
+> which one is preferable for the analysis at hand. In our own testing, both achieved comparable 
+> performance, though (in the case of two analysed timepoints) differential optimisation was approximately
+> 30% faster.  
+
 ```bash
 export tcksift2_unbiased="path/to/installation/mrtrix3_sift2unb/bin/tcksift2"
 ```
@@ -196,10 +203,7 @@ mrmath template/fixels/metrics/${metric}_tp* mean template/fixels/metrics/${metr
 mrcalc \
   template/fixels/metrics/${metric}_tp2.mif \
   template/fixels/metrics/${metric}_tp1.mif \
-  -sub - | \
-mrcalc \
-  - 0.5 \
-  -mult \
+  -sub 0.5 -mult \
   template/fixels/metrics/${metric}_tp2_min_tp1_half.mif
 ```
 

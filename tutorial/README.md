@@ -89,6 +89,7 @@ git clone https://github.com/MRtrix3/mrtrix3.git mrtrix3_sift2diff
 cd mrtrix3_sift2diff
 git checkout sift2diff
 ./configure -nogui
+./build bin/fod2fixel
 ./build bin/tcksift2
 ```
 

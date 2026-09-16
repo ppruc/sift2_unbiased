@@ -90,7 +90,8 @@ serve as input for registration:
 ```bash
 for_each tp* : mri_synthstrip \
   -i IN/T1w_norm_Warped.nii.gz \
-  -o IN/T1w_norm_Warped_brain.nii.gz
+  -o IN/T1w_norm_Warped_brain.nii.gz \
+  -m IN/T1w_norm_Warped_mask.nii.gz
 ```
 
 ### 4.1.2 Rigid registration based on T1-weighted information
@@ -170,18 +171,15 @@ To intensity scale the T1-weighted image to ODF data:
 ```bash
 mkdir -p template/t1w_input/
 
-for_each tp* : sh -c '
-  mrconvert IN/wmfod_norm.mif IN/tmp_wm.mif -coord 3 0
-  mrcalc IN/tmp_wm.mif IN/gm_norm.mif -add IN/tmp_wm_gm.mif
-  mrcalc IN/tmp_wm_gm.mif IN/csf_norm.mif -add IN/tmp_all.mif
-
-  mrhistmatch \
-    linear \
+for_each tp* : mrconvert IN/wmfod_norm.mif - -coord 3 0 \
+  "|" mrcalc - IN/gm_norm.mif -add - \
+  "|" mrcalc - IN/csf_norm.mif -add - \
+  "|" mrhistmatch linear \
     IN/T1w_norm_Warped_brain.nii.gz \
-    IN/tmp_all.mif \
-    template/t1w_input/PRE.nii.gz
-
-  rm IN/tmp*'
+    - \
+    template/t1w_input/IN.nii.gz \
+    -mask_input IN/T1w_norm_Warped_mask.nii.gz \
+    -mask_target IN/dwi_mask_upsampled.mif
 ```
 
 To generate the nonlinear templates and transforms run:
