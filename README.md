@@ -1,6 +1,6 @@
 # Robust longitudinal quantitative streamline tractography
 
-This repository includes relevant code to support the results of the manuscript "Longitudinal quantitative streamline tractography: robust estimation of white matter connectivity differences" (future link). Furthermore, it contains a comprehensive step-by-step tutorial for prospective users to apply the presented framework to their own datasets.
+This repository includes relevant code to support the results of the article ["Longitudinal quantitative streamline tractography: robust estimation of white matter connectivity differences"](https://direct.mit.edu/imag/article/doi/10.1162/IMAG.a.1414/139294/Longitudinal-quantitative-streamline-tractography). Furthermore, it contains a comprehensive step-by-step tutorial for prospective users to apply the presented framework to their own datasets.
 
 ## Key idea of the framework
 
@@ -20,7 +20,7 @@ Density optimisation of the unbiased quantitative tractogram can be performed us
 
 <p align="center">
   <em>
-    (A) Symmetric and (B) differential optimisation of an unbiased quantitative tractogram. Figure reproduced from the original manuscript (permission to be obtained from the publisher upon publication).
+    (A) Symmetric and (B) differential optimisation of an unbiased quantitative tractogram. Figure reproduced from the published article.
   </em>
 </p>
 
@@ -80,6 +80,4 @@ path/to/mrtrix3_sift2diff/bin/tcksift2
 
 If you use this framework, the provided code and/or the associated software, please cite:
 
-> Longitudinal quantitative streamline tractography: robust estimation of white matter connectivity differences
-> Philip Pruckner, Remika Mito, David N Vaughan, Kurt G Schilling, Victoria L Morgan, Dario J Englot, Robert E Smith
-> bioRxiv 2026.02.09.704742; doi: https://doi.org/10.64898/2026.02.09.704742
+> Philip Pruckner, Remika Mito, David N Vaughan, Kurt G Schilling, Victoria L Morgan, Dario J Englot, Robert E Smith; [Longitudinal quantitative streamline tractography: robust estimation of white matter connectivity differences](https://direct.mit.edu/imag/article/doi/10.1162/IMAG.a.1414/139294/Longitudinal-quantitative-streamline-tractography). *Imaging Neuroscience* 2026; doi: [https://doi.org/10.1162/IMAG.a.1414](https://doi.org/10.1162/IMAG.a.1414)

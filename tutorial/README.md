@@ -2,7 +2,7 @@
 This tutorial outlines how to perform quantitative streamline
 tractography to robustly estimate longitudinal changes in white matter
 connectivity. This is facilitated by **unbiased SIFT2 optimisation**
-[[Pruckner2026]](https://www.biorxiv.org/content/10.64898/2026.02.09.704742v1), which extends the original SIFT2 method
+[[Pruckner2026]](https://direct.mit.edu/imag/article/doi/10.1162/IMAG.a.1414/139294/Longitudinal-quantitative-streamline-tractography), which extends the original SIFT2 method
 [[Smith2015]](https://www.sciencedirect.com/science/article/pii/S1053811915005972)
 to enable robust longitudinal quantification of changes in
 **Fiber Bundle Capacity (FBC)**
@@ -150,4 +150,3 @@ Repeat the same process for any other required branches (e.g. `fixelcorresponden
   - 4.2.1 Reconstruction of session-wise T1-weighted images
   - 4.2.2 Base template reconstruction
   - 4.2.3. Longitudinal timepoint reconstruction
-
